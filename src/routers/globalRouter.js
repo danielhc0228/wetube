@@ -2,8 +2,7 @@ import express from "express";
 
 const globalRouter = express.Router();
 
-const handleHome = (req, res) => res.send("Home");
-
-globalRouter.get("/", handleHome);
+globalRouter.get("/", trending);
+globalRouter.get("/join", join);
 
 export default globalRouter;
